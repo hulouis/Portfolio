@@ -1,588 +1,845 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michael - Personal Portfolio</title><!--Usefull Meta-->
-    <meta name="description"
-        content="A slick, customizable CV, Resume or Portfolio template, perfect for photographers, freelancers or designers.">
-    <meta name="keywords" content="angus, resume, cv, vCard, portfolio, html template, template, responsive">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_16x16.png"><!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com/">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Michael - Personal Portfolio</title>
+    <!--Usefull Meta-->
+    <meta
+      name="description"
+      content="A slick, customizable CV, Resume or Portfolio template, perfect for photographers, freelancers or designers."
+    />
+    <meta
+      name="keywords"
+      content="angus, resume, cv, vCard, portfolio, html template, template, responsive"
+    />
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon_32x32.png"
+    />
     <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
-        rel="stylesheet"><!--AOS Animation Stylesheet-->
-    <link rel="stylesheet" href="css/aos.css"><!--Font Awesome-->
-    <link rel="stylesheet" href="css/all.min.css"><!--Magnific Popup-->
-    <link rel="stylesheet" href="css/magnific-popup.css"><!--OWL Carousel-->
-    <link rel="stylesheet" href="css/owl.carousel.min.css"><!--OWL Carousel Theme-->
-    <link rel="stylesheet" href="css/owl_theme.css"><!--Michael Styelsheet with Bootstrap 5-->
-    <link rel="stylesheet" href="css/michael_1.css">
-</head>
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon_16x16.png"
+    />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com/" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!--AOS Animation Stylesheet-->
 
-<body data-offset="102"><!--PRELOADER START-->
+    <link rel="stylesheet" href="css/aos.css" />
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--Magnific Popup-->
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <!--OWL Carousel-->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <!--OWL Carousel Theme-->
+    <link rel="stylesheet" href="css/owl_theme.css" />
+    <!--Michael Styelsheet with Bootstrap 5-->
+    <link rel="stylesheet" href="css/michael_1.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body data-offset="102">
+    <!--PRELOADER START-->
     <div id="preloader">
-        <div class="text-center w-100">
-            <div class="loader"></div>
-        </div>
-    </div><!--PRELOADER END--><!--Header START-->
+      <div class="text-center w-100">
+        <div class="loader"></div>
+      </div>
+    </div>
+    <!--PRELOADER END--><!--Header START-->
     <header class="michael-header sticky-top">
-        <div class="header-inside transparent_header">
-            <div class="d-flex flex-row justify-content-between align-items-center"><!--Header Toggler START-->
-                <div class="michael-menu-toggler"><a class="michael-toggler text-reset" data-bs-toggle="offcanvas"
-                        href="#michaelOffCanvas" role="button" aria-controls="michaelOffCanvas">
-                        <div class="kt-r"><span></span><span></span><span></span></div>
-                        <div class="kt-t">MENU </div>
-                    </a></div><!--Header Toggler END--><!--Header Logo START-->
-                <div class="michael-logo"><a href="#"><img src="images/logo.svg" height="30" alt="michael"></a>
-                </div><!--Header Logo END--><!--Header Info START-->
-                <div class="michael-nav-meta fs-5 fw-bold d-none d-sm-block text-end"><a href="#"
-                        class="text-reset">hu200188@outlook.com
-                    </a></div><!--Header Info END-->
-            </div>
-        </div>
-    </header><!--Header END--><!--Off Canvas START-->
-    <div class="offcanvas offcanvas-start" id="michaelOffCanvas"><!--Off Canvas Header START-->
-        <div class="offcanvas-header"><button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                aria-label="Close"><i class="fas fa-times"></i></button></div>
-        <!--Off Canvas Header END--><!--Off Canvas Body START-->
-        <div class="offcanvas-body">
-            <div class="michael-offcanvas-nav-container d-flex flex-column justify-content-center align-items-center">
-                <!--Off Canvas Navigation START-->
-                <ul class="michael-offcanvas-nav list-inline">
-                    <li class="py-3"><a href="#home"
-                            class="michael_scrollspy underline_animation underline_text text-reset fs-4 fw-bold"
-                            data-bs-dismiss="offcanvas">Home</a></li>
-                    <li class="py-3"><a href="#about"
-                            class="michael_scrollspy underline_animation underline_text text-reset fs-4 fw-bold"
-                            data-bs-dismiss="offcanvas">About</a></li>
-                    <li class="py-3"><a href="#portfolio"
-                            class="michael_scrollspy underline_animation underline_text text-reset fs-4 fw-bold"
-                            data-bs-dismiss="offcanvas">Portfolio</a></li>
-                    <li class="py-3"><a href="#contact"
-                            class="michael_scrollspy underline_animation underline_text text-reset fs-4 fw-bold"
-                            data-bs-dismiss="offcanvas">Contact</a></li>
-                </ul><!--Off Canvas Navigation END-->
-            </div>
-        </div><!--Off Canvas Body END-->
-    </div><!--Off Canvas END--><!--Home Section START-->
-    <section id="home" class="home vh-100"><!--Home Background START-->
-        <div class="home-background position-absolute top-0 start-0 w-100 h-100"><img src="images/home.jpg"
-                data-aos="fade-up" data-aos-duration="1000" alt="home" class="w-100 h-100 fit-cover fit-left-top"></div>
-        <!--Home Background END--><!--Home Container START-->
-        <div class="container h-100 position-relative">
-            <div class="home-details text-center text-sm-end w-100 h-100 d-flex align-items-center">
-                <div class="home-details-inner w-100">
-                    <p class="welcome_text fs-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500"><span
-                            class="typed_text" data-options="Web Developer, Graphic Designer"></span></p>
-                    <h1 class="fs-1 fw-bold  michael-underline-center michael-underline-sm-right michael-underline-big d-inline-block"
-                        data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">I'm Michael</h1>
-                </div>
-            </div>
-        </div>
-        <!--Home Container END-->
-        <!--Scroll Down START-->
-        <div class="scroll-down">
-            <a href="#about" class="michael_scrollspy scroll-down-link text-center">
-                <div class="scroll-title">Scroll Down</div>
-                <div class="scroll-mouse">
-                    <div class="whell"></div>
-                </div>
+      <div class="header-inside transparent_header">
+        <div class="d-flex flex-row justify-content-between align-items-center">
+          <!--Header Toggler START-->
+          <div class="michael-menu-toggler">
+            <a
+              class="michael-toggler text-reset"
+              data-bs-toggle="offcanvas"
+              href="#michaelOffCanvas"
+              role="button"
+              aria-controls="michaelOffCanvas"
+            >
+              <div class="kt-r"><span></span><span></span><span></span></div>
+              <div class="kt-t">MENU</div>
             </a>
+          </div>
+          <!--Header Toggler END--><!--Header Logo START-->
+          <div class="michael-logo">
+            <a href="#"
+              ><img src="images/logo.svg" height="30" alt="michael"
+            /></a>
+          </div>
+          <!--Header Logo END--><!--Header Info START-->
+          <div class="michael-nav-meta fs-5 fw-bold d-none d-sm-block text-end">
+            <a href="#" class="text-reset">hu200188@outlook.com </a>
+          </div>
+          <!--Header Info END-->
         </div>
-        <!--Scroll Down END-->
+      </div>
+    </header>
+    <!--Header END--><!--Off Canvas START-->
+    <div class="offcanvas offcanvas-start" id="michaelOffCanvas">
+      <!--Off Canvas Header START-->
+      <div class="offcanvas-header">
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        >
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <!--Off Canvas Header END--><!--Off Canvas Body START-->
+      <div class="offcanvas-body">
+        <div
+          class="michael-offcanvas-nav-container d-flex flex-column justify-content-center align-items-center"
+        >
+          <!--Off Canvas Navigation START-->
+          <ul class="michael-offcanvas-nav list-inline">
+            <li class="py-3">
+              <a
+                href="#home"
+                class="michael_scrollspy underline_animation underline_text text-reset fs-4 fw-bold"
+                data-bs-dismiss="offcanvas"
+                >Home</a
+              >
+            </li>
+            <li class="py-3">
+              <a
+                href="#about"
+                class="michael_scrollspy underline_animation underline_text text-reset fs-4 fw-bold"
+                data-bs-dismiss="offcanvas"
+                >About</a
+              >
+            </li>
+            <li class="py-3">
+              <a
+                href="#portfolio"
+                class="michael_scrollspy underline_animation underline_text text-reset fs-4 fw-bold"
+                data-bs-dismiss="offcanvas"
+                >Portfolio</a
+              >
+            </li>
+            <li class="py-3">
+              <a
+                href="#contact"
+                class="michael_scrollspy underline_animation underline_text text-reset fs-4 fw-bold"
+                data-bs-dismiss="offcanvas"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <!--Off Canvas Navigation END-->
+        </div>
+      </div>
+      <!--Off Canvas Body END-->
+    </div>
+    <!--Off Canvas END--><!--Home Section START-->
+    <section id="home" class="home vh-100">
+      <!--Home Background START-->
+      <div class="home-background position-absolute top-0 start-0 w-100 h-100">
+        <img
+          src="images/home.jpg"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          alt="home"
+          class="w-100 h-100 fit-cover fit-left-top"
+        />
+      </div>
+      <!--Home Background END--><!--Home Container START-->
+      <div class="container h-100 position-relative">
+        <div
+          class="home-details text-center text-sm-end w-100 h-100 d-flex align-items-center"
+        >
+          <div class="home-details-inner w-100">
+            <p
+              class="welcome_text fs-4"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="500"
+            >
+              <span
+                class="typed_text"
+                data-options="Web Developer, Graphic Designer"
+              ></span>
+            </p>
+            <h1
+              class="fs-1 fw-bold michael-underline-center michael-underline-sm-right michael-underline-big d-inline-block"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="800"
+            >
+              I'm Michael
+            </h1>
+          </div>
+        </div>
+      </div>
+      <!--Home Container END-->
+      <!--Scroll Down START-->
+      <div class="scroll-down">
+        <a href="#about" class="michael_scrollspy scroll-down-link text-center">
+          <div class="scroll-title">Scroll Down</div>
+          <div class="scroll-mouse">
+            <div class="whell"></div>
+          </div>
+        </a>
+      </div>
+      <!--Scroll Down END-->
     </section>
     <!--Home Section END-->
     <!--About Section START-->
     <section id="about" class="min-vh-100">
-        <div class="container h-100">
-            <div class="about_inside w-100 h-100 d-flex justify-content-center align-items-center">
-                <div class="row w-100">
-                    <!--About Section Picture START-->
-                    <div class="offset-md-1 col-md-4">
-                        <div class="about-image w-100">
-                            <img src="images/about.jpg" class="michael-shadow rounded-3 w-100" alt="michael Picture"
-                                data-aos="zoom-in" data-aos-duration="800">
-                        </div>
-                    </div>
-                    <!--About Section Picture END-->
-                    <!--About Section Details START-->
-                    <div class="offset-md-1 col-md-6 mt-5 mt-md-0">
-                        <div class="h-100 d-flex align-items-center justify-content-center">
-                            <div class="about-details">
-                                <h2 class="fs-3 fw-bold mb-5">I'm Michael </h2>
-                                <p class="text-secondary mb-5">With a decade of extensive experience in the internet
-                                    industry, I have held diverse roles such as <B>Frontend Developer, Web Designer, UI
-                                        Designer, Manager, and Game Video Animator. Well-versed in industry practices, I
-                                        possess proficiency in HTML, CSS, Bootstrap, JavaScript,gitgub, Adobe software
-                                        suite,
-                                        Ue4,
-                                        3dmax, WordPress, Shopify</B>, and more. My skill set spans a wide range,
-                                    reflecting a
-                                    comprehensive understanding of the field. Beyond my professional expertise, I am an
-                                    avid enthusiast of photography, travel, road trips, fitness, and sports. Fueled by a
-                                    genuine passion for the internet industry, I am eager to contribute my skills and
-                                    experience to make a meaningful impact.</p>
-
-
-                            </div>
-                        </div>
-                    </div>
-                    <!--About Section Details END-->
-                </div>
+      <div class="container h-100">
+        <div
+          class="about_inside w-100 h-100 d-flex justify-content-center align-items-center"
+        >
+          <div class="row w-100">
+            <!--About Section Picture START-->
+            <div class="offset-md-1 col-md-4">
+              <div class="about-image w-100">
+                <img
+                  src="images/about.jpg"
+                  class="michael-shadow rounded-3 w-100"
+                  alt="michael Picture"
+                  data-aos="zoom-in"
+                  data-aos-duration="800"
+                />
+              </div>
             </div>
+            <!--About Section Picture END-->
+            <!--About Section Details START-->
+            <div class="offset-md-1 col-md-6 mt-5 mt-md-0">
+              <div
+                class="h-100 d-flex align-items-center justify-content-center"
+              >
+                <div class="about-details">
+                  <h2 class="fs-3 fw-bold mb-5">I'm Michael</h2>
+                  <p class="text-secondary mb-5">
+                    With extensive experience in the internet industry, I have
+                    successfully taken on diverse roles including
+                    <b
+                      >Frontend Developer, Web Designer, UI Designer, Manager,
+                      and Game Video Animator. I am proficient in HTML, CSS,
+                      Bootstrap, JavaScript, GitHub,sass,React, Adobe Creative
+                      Suite, Unreal Engine 4 (UE4), 3ds Max, WordPress,
+                      Shopify,</b
+                    >
+                    and more, showcasing a broad and versatile skill set. My
+                    expertise reflects a deep understanding of industry best
+                    practices and emerging technologies. Outside of my
+                    professional work, I am passionate about photography,
+                    travel, road trips, fitness, and sports, which fuel my
+                    creativity and inspire my projects. With a genuine
+                    enthusiasm for the internet industry, I am eager to leverage
+                    my skills and experience to deliver innovative solutions and
+                    create meaningful impact.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--About Section Details END-->
+          </div>
         </div>
+      </div>
     </section>
     <!--About Section END-->
     <!--Services Section START-->
     <section id="services">
-        <div class="container">
-            <!--Section Heading START-->
-            <div class="heading text-center mb-5">
-                <h2 class="fs-3 michael-underline-left mb-5 fw-bold text-uppercase d-inline-block">Services</h2>
-            </div>
-            <!--Section Heading END-->
-            <!--Section Body START-->
-            <div class="section-body">
-                <!--Gradient Grid START-->
-                <div class="michael-gradient-grid">
-                    <!--Gradient Grid ROW START-->
-                    <div class="row g-0">
-                        <!--Gradient Grid Item START-->
-                        <div class="col-lg-4 text-center">
-                            <div class="p-5">
-                                <div class="fs-2 mb-3">
-                                    <i class="fas fa-server"></i>
-                                </div>
-                                <h4 class="mb-3">Web Development</h4>
-
-                            </div>
-                        </div>
-                        <!--Gradient Grid Item END-->
-                        <!--Gradient Grid Item START-->
-                        <div class="col-lg-4 text-center">
-                            <div class="p-5">
-                                <div class="fs-2 mb-3">
-                                    <i class="fas fa-mobile-alt"></i>
-                                </div>
-                                <h4 class="mb-3">Responsive</h4>
-
-                            </div>
-                        </div>
-                        <!--Gradient Grid Item END-->
-                        <!--Gradient Grid Item START-->
-                        <div class="col-lg-4 text-center">
-                            <div class="p-5">
-                                <div class="fs-2 mb-3">
-                                    <i class="fas fa-mug-hot"></i>
-                                </div>
-                                <h4 class="mb-3">UX / UI Design</h4>
-
-                            </div>
-                        </div>
-                        <!--Gradient Grid Item END-->
-                    </div>
-                    <!--Gradient Grid ROW END-->
-                    <!--Gradient Grid ROW START-->
-                    <div class="row g-0">
-                        <!--Gradient Grid Item START-->
-                        <div class="col-lg-4 text-center">
-                            <div class="p-5">
-                                <div class="fs-2 mb-3">
-                                    <i class="far fa-clone"></i>
-                                </div>
-                                <h4 class="mb-3">User Friendly</h4>
-
-                            </div>
-                        </div>
-                        <!--Gradient Grid Item END-->
-                        <!--Gradient Grid Item START-->
-                        <div class="col-lg-4 text-center">
-                            <div class="p-5">
-                                <div class="fs-2 mb-3">
-                                    <i class="far fa-heart"></i>
-
-                                </div>
-                                <h4 class="mb-3"> Game Animation</h4>
-
-                            </div>
-                        </div>
-                        <!--Gradient Grid Item END-->
-                        <!--Gradient Grid Item START-->
-                        <div class="col-lg-4 text-center">
-                            <div class="p-5">
-                                <div class="fs-2 mb-3">
-                                    <i class="fas fa-rocket"></i>
-                                </div>
-                                <h4 class="mb-3">Bootstrap 5</h4>
-
-                            </div>
-                        </div>
-                        <!--Gradient Grid Item END-->
-                    </div>
-                    <!--Gradient Grid ROW END-->
-                </div>
-                <!--Gradient Grid END-->
-            </div>
-            <!--Section Body END-->
+      <div class="container">
+        <!--Section Heading START-->
+        <div class="heading text-center mb-5">
+          <h2
+            class="fs-3 michael-underline-left mb-5 fw-bold text-uppercase d-inline-block"
+          >
+            Services
+          </h2>
         </div>
+        <!--Section Heading END-->
+        <!--Section Body START-->
+        <div class="section-body">
+          <!--Gradient Grid START-->
+          <div class="michael-gradient-grid">
+            <!--Gradient Grid ROW START-->
+            <div class="row g-0">
+              <!--Gradient Grid Item START-->
+              <div class="col-lg-4 text-center">
+                <div class="p-5">
+                  <div class="fs-2 mb-3">
+                    <i class="fas fa-server"></i>
+                  </div>
+                  <h4 class="mb-3">Web Development</h4>
+                </div>
+              </div>
+              <!--Gradient Grid Item END-->
+              <!--Gradient Grid Item START-->
+              <div class="col-lg-4 text-center">
+                <div class="p-5">
+                  <div class="fs-2 mb-3">
+                    <i class="fas fa-mobile-alt"></i>
+                  </div>
+                  <h4 class="mb-3">Responsive</h4>
+                </div>
+              </div>
+              <!--Gradient Grid Item END-->
+              <!--Gradient Grid Item START-->
+              <div class="col-lg-4 text-center">
+                <div class="p-5">
+                  <div class="fs-2 mb-3">
+                    <i class="fas fa-mug-hot"></i>
+                  </div>
+                  <h4 class="mb-3">UX / UI Design</h4>
+                </div>
+              </div>
+              <!--Gradient Grid Item END-->
+            </div>
+            <!--Gradient Grid ROW END-->
+            <!--Gradient Grid ROW START-->
+            <div class="row g-0">
+              <!--Gradient Grid Item START-->
+              <div class="col-lg-4 text-center">
+                <div class="p-5">
+                  <div class="fs-2 mb-3">
+                    <i class="far fa-clone"></i>
+                  </div>
+                  <h4 class="mb-3">User Friendly</h4>
+                </div>
+              </div>
+              <!--Gradient Grid Item END-->
+              <!--Gradient Grid Item START-->
+              <div class="col-lg-4 text-center">
+                <div class="p-5">
+                  <div class="fs-2 mb-3">
+                    <i class="far fa-heart"></i>
+                  </div>
+                  <h4 class="mb-3">Game Animation</h4>
+                </div>
+              </div>
+              <!--Gradient Grid Item END-->
+              <!--Gradient Grid Item START-->
+              <div class="col-lg-4 text-center">
+                <div class="p-5">
+                  <div class="fs-2 mb-3">
+                    <i class="fas fa-rocket"></i>
+                  </div>
+                  <h4 class="mb-3">Bootstrap 5</h4>
+                </div>
+              </div>
+              <!--Gradient Grid Item END-->
+            </div>
+            <!--Gradient Grid ROW END-->
+          </div>
+          <!--Gradient Grid END-->
+        </div>
+        <!--Section Body END-->
+      </div>
     </section>
     <!--Services Section END-->
     <!--Facts Section START-->
     <section id="facts">
-        <!--Section Body START-->
-        <div class="section-body">
-            <div class="container">
-                <div class="row gy-5">
-                    <div class="col-md-6">
-                        <div class="row gx-3 gy-5">
-                            <div class="col-6">
-                                <!--Facts Item START-->
-                                <div class="fact d-flex flex-column align-items-center align-items-md-start">
-                                    <h3 class="fs-1 d-inline-block"><span class="tmcounter" data-from="0" data-to="10"
-                                            data-speed="1500">0</span><sup>+</sup></h3>
-                                    <p class="fs-4 d-inline-block text-center text-md-left">Years Experience</p>
-                                </div>
-                                <!--Facts Item END-->
-                            </div>
-
-
-
-                            <div class="col-6">
-                                <!--Facts Item START-->
-                                <div class="fact d-flex flex-column align-items-center align-items-md-start">
-                                    <h3 class="fs-1 d-inline-block"><span class="tmcounter" data-from="0" data-to="500"
-                                            data-speed="1500">0</span></h3>
-                                    <p class="fs-4 d-inline-block text-center text-md-left">Projects done</p>
-                                </div>
-                                <!--Facts Item END-->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <h2 class="fs-3 mb-5 fw-bold">My Skills</h2>
-                        <div class="skills_container">
-                            <!--Progress Bar START-->
-                            <div class="mb-4">
-                                <label class="mb-3 fs-6">Design 95%</label>
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-loadAnimation" data-percent="95"
-                                        style="width: 0%;" role="progressbar" aria-valuenow="95" aria-valuemin="0"
-                                        aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <!--Progress Bar END-->
-                            <!--Progress Bar START-->
-                            <div class="mb-4">
-                                <label class="mb-3 fs-6">Animation development 85%</label>
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-loadAnimation" data-percent="85"
-                                        style="width: 0%;" role="progressbar" aria-valuenow="85" aria-valuemin="0"
-                                        aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <!--Progress Bar END-->
-                            <!--Progress Bar START-->
-                            <div class="mb-4">
-                                <label class="mb-3 fs-6">Wordpress development 75%</label>
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-loadAnimation" data-percent="75"
-                                        style="width: 0%;" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                                        aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <!--Progress Bar END-->
-                            <!--Progress Bar START-->
-                            <div class="mb-4">
-                                <label class="mb-3 fs-6">Front end development 95%</label>
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-loadAnimation" data-percent="95"
-                                        style="width: 0%;" role="progressbar" aria-valuenow="95" aria-valuemin="0"
-                                        aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <!--Progress Bar END-->
-                        </div>
-
-                    </div>
+      <!--Section Body START-->
+      <div class="section-body">
+        <div class="container">
+          <div class="row gy-5">
+            <div class="col-md-6">
+              <div class="row gx-3 gy-5">
+                <div class="col-6">
+                  <!--Facts Item START-->
+                  <div
+                    class="fact d-flex flex-column align-items-center align-items-md-start"
+                  >
+                    <h3 class="fs-1 d-inline-block">
+                      <span
+                        class="tmcounter"
+                        data-from="0"
+                        data-to="10"
+                        data-speed="1500"
+                        >0</span
+                      ><sup>+</sup>
+                    </h3>
+                    <p class="fs-4 d-inline-block text-center text-md-left">
+                      Years Experience
+                    </p>
+                  </div>
+                  <!--Facts Item END-->
                 </div>
+
+                <div class="col-6">
+                  <!--Facts Item START-->
+                  <div
+                    class="fact d-flex flex-column align-items-center align-items-md-start"
+                  >
+                    <h3 class="fs-1 d-inline-block">
+                      <span
+                        class="tmcounter"
+                        data-from="0"
+                        data-to="500"
+                        data-speed="1500"
+                        >0</span
+                      >
+                    </h3>
+                    <p class="fs-4 d-inline-block text-center text-md-left">
+                      Projects done
+                    </p>
+                  </div>
+                  <!--Facts Item END-->
+                </div>
+              </div>
             </div>
+            <div class="col-md-6">
+              <h2 class="fs-3 mb-5 fw-bold">My Skills</h2>
+              <div class="skills_container">
+                <!--Progress Bar START-->
+                <div class="mb-4">
+                  <label class="mb-3 fs-6">Design 95%</label>
+                  <div class="progress">
+                    <div
+                      class="progress-bar progress-bar-loadAnimation"
+                      data-percent="95"
+                      style="width: 0%"
+                      role="progressbar"
+                      aria-valuenow="95"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+                <!--Progress Bar END-->
+                <!--Progress Bar START-->
+                <div class="mb-4">
+                  <label class="mb-3 fs-6">Animation development 85%</label>
+                  <div class="progress">
+                    <div
+                      class="progress-bar progress-bar-loadAnimation"
+                      data-percent="85"
+                      style="width: 0%"
+                      role="progressbar"
+                      aria-valuenow="85"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+                <!--Progress Bar END-->
+                <!--Progress Bar START-->
+                <div class="mb-4">
+                  <label class="mb-3 fs-6">Wordpress development 75%</label>
+                  <div class="progress">
+                    <div
+                      class="progress-bar progress-bar-loadAnimation"
+                      data-percent="75"
+                      style="width: 0%"
+                      role="progressbar"
+                      aria-valuenow="75"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+                <!--Progress Bar END-->
+                <!--Progress Bar START-->
+                <div class="mb-4">
+                  <label class="mb-3 fs-6">Front end development 95%</label>
+                  <div class="progress">
+                    <div
+                      class="progress-bar progress-bar-loadAnimation"
+                      data-percent="95"
+                      style="width: 0%"
+                      role="progressbar"
+                      aria-valuenow="95"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+                <!--Progress Bar END-->
+              </div>
+            </div>
+          </div>
         </div>
-        <!--Section Body END-->
+      </div>
+      <!--Section Body END-->
     </section>
     <!--Facts Sectrion END-->
     <!--Portfolio Section START-->
     <section id="portfolio">
-        <div class="container">
-            <!--Section Heading START-->
-            <div class="heading text-center mb-5">
-                <h2 class="fs-3 michael-underline-left mb-5 fw-bold text-uppercase d-inline-block">Portfolio</h2>
-            </div>
-            <!--Section Heading END-->
-            <!--Section Body START-->
-            <div class="section-body">
-                <!--Masonry Grid Container START-->
-                <div class="row gy-5 grid">
-                    <!--Masonry Grid Item START-->
-                    <div class="col-md-6 col-lg-4 grid-item">
-
-                        <a href="design.html" class="portfolio-item  underline_animation text-reset">
-                            <div class="portfolio-thumbnail">
-                                <img src="images/design/design-1.jpg" class="img-fluid img-grayTransition" alt="">
-                            </div>
-                            <div class="portfolio-description my-3">
-                                <h3 class="fs-4 underline_text fw-bold d-inline-block">Design</h3>
-
-                            </div>
-                        </a>
-
-                    </div>
-                    <!--Masonry Grid Item END-->
-                    <!--Masonry Grid Item START-->
-                    <div class="col-md-6 col-lg-4 grid-item">
-
-                        <a href="banner.html" class="portfolio-item underline_animation text-reset">
-                            <div class="portfolio-thumbnail">
-                                <img src="images/banner/banner-1.png" class="img-fluid img-grayTransition" alt="">
-                            </div>
-                            <div class="portfolio-description my-3">
-                                <h3 class="fs-4 underline_text fw-bold d-inline-block">Banner</h3>
-
-                            </div>
-                        </a>
-
-                    </div>
-                    <!--Masonry Grid Item END-->
-                    <!--Masonry Grid Item START-->
-                    <div class="col-md-6 col-lg-4 grid-item">
-
-                        <a href="animation.html" class="portfolio-item  underline_animation text-reset">
-                            <div class="portfolio-thumbnail">
-                                <img src="images/animation/3213213.png" class="img-fluid img-grayTransition" alt="">
-                            </div>
-                            <div class="portfolio-description my-3">
-                                <h3 class="fs-4 underline_text fw-bold d-inline-block">Animation</h3>
-
-                            </div>
-                        </a>
-
-                    </div>
-                    <!--Masonry Grid Item END-->
-                    <!--Masonry Grid Item START-->
-                    <div class="col-md-6 col-lg-4 grid-item">
-
-                        <a href="logo.html" class="portfolio-item  underline_animation text-reset">
-                            <div class="portfolio-thumbnail">
-                                <img src="images/logo/logo-1.jpg" class="img-fluid img-grayTransition" alt="">
-                            </div>
-                            <div class="portfolio-description my-3">
-                                <h3 class="fs-4 underline_text fw-bold d-inline-block">Logo</h3>
-
-                            </div>
-                        </a>
-
-                    </div>
-                    <!--Masonry Grid Item END-->
-                    <!--Masonry Grid Item START-->
-                    <div class="col-md-6 col-lg-4 grid-item">
-
-                        <a href="photography.html" class="portfolio-item  underline_animation text-reset">
-                            <div class="portfolio-thumbnail">
-                                <img src="images/photography/photography-15.jpg" class="img-fluid img-grayTransition"
-                                    alt="">
-                            </div>
-                            <div class="portfolio-description my-3">
-                                <h3 class="fs-4 underline_text fw-bold d-inline-block">Photography</h3>
-
-                            </div>
-                        </a>
-                    </div>
-                    <!--Masonry Grid Item END-->
-
-
-
-                </div>
-                <!--Masonry Grid Container END-->
-            </div>
-            <!--Section Body START-->
+      <div class="container">
+        <!--Section Heading START-->
+        <div class="heading text-center mb-5">
+          <h2
+            class="fs-3 michael-underline-left mb-5 fw-bold text-uppercase d-inline-block"
+          >
+            Portfolio
+          </h2>
         </div>
+        <!--Section Heading END-->
+        <!--Section Body START-->
+        <div class="section-body">
+          <!--Masonry Grid Container START-->
+          <div class="row gy-5 grid">
+            <!--Masonry Grid Item START-->
+            <div class="col-md-6 col-lg-4 grid-item">
+              <a
+                href="design.html"
+                class="portfolio-item underline_animation text-reset"
+              >
+                <div class="portfolio-thumbnail">
+                  <img
+                    src="images/design/design-1.jpg"
+                    class="img-fluid img-grayTransition"
+                    alt=""
+                  />
+                </div>
+                <div class="portfolio-description my-3">
+                  <h3 class="fs-4 underline_text fw-bold d-inline-block">
+                    Design
+                  </h3>
+                </div>
+              </a>
+            </div>
+            <!--Masonry Grid Item END-->
+            <!--Masonry Grid Item START-->
+            <div class="col-md-6 col-lg-4 grid-item">
+              <a
+                href="banner.html"
+                class="portfolio-item underline_animation text-reset"
+              >
+                <div class="portfolio-thumbnail">
+                  <img
+                    src="images/banner/banner-1.png"
+                    class="img-fluid img-grayTransition"
+                    alt=""
+                  />
+                </div>
+                <div class="portfolio-description my-3">
+                  <h3 class="fs-4 underline_text fw-bold d-inline-block">
+                    Banner
+                  </h3>
+                </div>
+              </a>
+            </div>
+            <!--Masonry Grid Item END-->
+            <!--Masonry Grid Item START-->
+            <div class="col-md-6 col-lg-4 grid-item">
+              <a
+                href="animation.html"
+                class="portfolio-item underline_animation text-reset"
+              >
+                <div class="portfolio-thumbnail">
+                  <img
+                    src="images/animation/3213213.png"
+                    class="img-fluid img-grayTransition"
+                    alt=""
+                  />
+                </div>
+                <div class="portfolio-description my-3">
+                  <h3 class="fs-4 underline_text fw-bold d-inline-block">
+                    Animation
+                  </h3>
+                </div>
+              </a>
+            </div>
+            <!--Masonry Grid Item END-->
+            <!--Masonry Grid Item START-->
+            <div class="col-md-6 col-lg-4 grid-item">
+              <a
+                href="logo.html"
+                class="portfolio-item underline_animation text-reset"
+              >
+                <div class="portfolio-thumbnail">
+                  <img
+                    src="images/logo/logo-1.jpg"
+                    class="img-fluid img-grayTransition"
+                    alt=""
+                  />
+                </div>
+                <div class="portfolio-description my-3">
+                  <h3 class="fs-4 underline_text fw-bold d-inline-block">
+                    Logo
+                  </h3>
+                </div>
+              </a>
+            </div>
+            <!--Masonry Grid Item END-->
+            <!--Masonry Grid Item START-->
+            <div class="col-md-6 col-lg-4 grid-item">
+              <a
+                href="photography.html"
+                class="portfolio-item underline_animation text-reset"
+              >
+                <div class="portfolio-thumbnail">
+                  <img
+                    src="images/photography/photography-15.jpg"
+                    class="img-fluid img-grayTransition"
+                    alt=""
+                  />
+                </div>
+                <div class="portfolio-description my-3">
+                  <h3 class="fs-4 underline_text fw-bold d-inline-block">
+                    Photography
+                  </h3>
+                </div>
+              </a>
+            </div>
+            <!--Masonry Grid Item END-->
+          </div>
+          <!--Masonry Grid Container END-->
+        </div>
+        <!--Section Body START-->
+      </div>
     </section>
     <!--Portfolio Section END-->
     <!--Education Section START-->
     <section id="education">
-        <div class="container">
-            <!--Section Heading START-->
-            <div class="heading text-center mb-5">
-                <h2 class="fs-3 michael-underline-left mb-5 fw-bold text-uppercase d-inline-block">Education</h2>
-            </div>
-            <!--Section Heading END-->
-            <!--Section Body START-->
-            <div class="section-body">
-                <div class="table-responsive">
-                    <!--Educational Table START-->
-                    <table class="table">
-                        <tbody>
-                            <tr>
-                                <td class="d-table-cell d-sm-none">
-                                    <div class="mb-3 fw-light">2023-2024</div>
-                                    <div class="mb-3 fw-bold">Algonquin college, Interactive Media Design</div>
-                                    <div>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</div>
-                                </td>
-                                <td class="w-25 d-none d-sm-table-cell">
-                                    <span class="fw-light fs-4">2023-2024</span>
-                                </td>
-                                <td class="w-50 d-none d-sm-table-cell">
-                                    <span class="fw-bold fs-3"> Interactive Media Design</span>
-                                    <div class="fw-bold fs-4">Algonquin college</div>
-                                </td>
-                                <td class="w-25 d-none d-sm-table-cell">
-                                    <span class="fw-normal text-secondary">Relevant Courswork:Design Foundations, Web
-                                        Development（Bootstrap,JavaScript,Visual Studio）, Introductio to
-                                        Photography (photoshop,Illustrator,), Communications, Digital Graphics,Video
-                                        Foundations, User Experience Design,Content Management (WordPress,
-                                        Drupal,Shopify) </span>
-                                </td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-                    <!--Educational Table END-->
-                </div>
-            </div>
-            <!--Section Body END-->
+      <div class="container">
+        <!--Section Heading START-->
+        <div class="heading text-center mb-5">
+          <h2
+            class="fs-3 michael-underline-left mb-5 fw-bold text-uppercase d-inline-block"
+          >
+            Education
+          </h2>
         </div>
+        <!--Section Heading END-->
+        <!--Section Body START-->
+        <div class="section-body">
+          <div class="table-responsive">
+            <!--Educational Table START-->
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td class="d-table-cell d-sm-none">
+                    <div class="mb-3 fw-light">2023-2024</div>
+                    <div class="mb-3 fw-bold">
+                      Algonquin college, Interactive Media Design
+                    </div>
+                    <div>
+                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                      sed diam nonumy
+                    </div>
+                  </td>
+                  <td class="w-25 d-none d-sm-table-cell">
+                    <span class="fw-light fs-4">2023-2024</span>
+                  </td>
+                  <td class="w-50 d-none d-sm-table-cell">
+                    <span class="fw-bold fs-3"> Interactive Media Design</span>
+                    <div class="fw-bold fs-4">Algonquin college</div>
+                  </td>
+                  <td class="w-25 d-none d-sm-table-cell">
+                    <span class="fw-normal text-secondary"
+                      >Relevant Courswork:Design Foundations, Web
+                      Development（Bootstrap,JavaScript,Visual Studio）,
+                      Introductio to Photography (photoshop,Illustrator,),
+                      Communications, Digital Graphics,Video Foundations, User
+                      Experience Design,Content Management (WordPress,
+                      Drupal,Shopify)
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!--Educational Table END-->
+          </div>
+        </div>
+        <!--Section Body END-->
+      </div>
     </section>
     <!--Education Section END-->
 
-
     <!--Professional Experience START-->
     <section id="Professional Experience">
-        <div class="container">
-            <!--Section Heading START-->
-            <div class="heading text-center mb-5">
-                <h2 class="fs-3 michael-underline-left mb-5 fw-bold text-uppercase d-inline-block">Professional
-                    Experience</h2>
-            </div>
-            <!--Section Heading END-->
-            <!--Section Body START-->
-            <div class="section-body">
-                <div class="table-responsive">
-                    <!--Educational Table START-->
-                    <table class="table">
-                        <tbody>
-                            <tr>
-                                <td class="d-table-cell d-sm-none">
-                                    <div class="mb-3 fw-light">Apri 2024 - August 2024</div>
-                                    <div class="mb-3 fw-bold">City of Ottawa oc-transpo</div>
-                                    <div>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</div>
-                                </td>
-                                <td class="w-25 d-none d-sm-table-cell">
-                                    <span class="fw-light fs-4">Apri 2024 - August 2024</span>
-                                </td>
-                                <td class="w-50 d-none d-sm-table-cell">
-                                    <span class="fw-bold fs-3"> City of Ottawa oc-transpo</span>
-                                    <div class="fw-bold fs-4">Coop students</div>
-                                </td>
-                                <td class="w-25 d-none d-sm-table-cell">
-                                    <span class="fw-normal text-secondary">Collaborated with the Design team to create
-                                        visually appealing materials, ensuring brand consistency across all projects.
-                                        Assisted the Web team in maintaining and updating the website, enhancing user
-                                        experience through intuitive design.
-                                        Proactively engaged in additional tasks, including animation design and event
-                                        photography, demonstrating adaptability and a willingness to take on new
-                                        challenges.
-                                        Received high praise from supervisor Mccallum Sue for exceptional performance
-                                        and a strong work ethic.</span>
-                                </td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-                    <!--Educational Table END-->
-                </div>
-            </div>
-            <!--Section Body END-->
+      <div class="container">
+        <!--Section Heading START-->
+        <div class="heading text-center mb-5">
+          <h2
+            class="fs-3 michael-underline-left mb-5 fw-bold text-uppercase d-inline-block"
+          >
+            Professional Experience
+          </h2>
         </div>
+        <!--Section Heading END-->
+        <!--Section Body START-->
+        <div class="section-body">
+          <div class="table-responsive">
+            <!--Educational Table START-->
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td class="d-table-cell d-sm-none">
+                    <div class="mb-3 fw-light">Apri 2024 - August 2024</div>
+                    <div class="mb-3 fw-bold">City of Ottawa oc-transpo</div>
+                    <div>
+                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                      sed diam nonumy
+                    </div>
+                  </td>
+                  <td class="w-25 d-none d-sm-table-cell">
+                    <span class="fw-light fs-4">Apri 2024 - August 2024</span>
+                  </td>
+                  <td class="w-50 d-none d-sm-table-cell">
+                    <span class="fw-bold fs-3"> City of Ottawa oc-transpo</span>
+                    <div class="fw-bold fs-4">Coop students</div>
+                  </td>
+                  <td class="w-25 d-none d-sm-table-cell">
+                    <span class="fw-normal text-secondary"
+                      >Collaborated with the Design team to create visually
+                      appealing materials, ensuring brand consistency across all
+                      projects. Assisted the Web team in maintaining and
+                      updating the website, enhancing user experience through
+                      intuitive design. Proactively engaged in additional tasks,
+                      including animation design and event photography,
+                      demonstrating adaptability and a willingness to take on
+                      new challenges. Received high praise from supervisor
+                      Mccallum Sue for exceptional performance and a strong work
+                      ethic.</span
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!--Educational Table END-->
+          </div>
+        </div>
+        <!--Section Body END-->
+      </div>
     </section>
     <!--Professional Experience END-->
 
-
-
-
-
     <!--Contact Us START-->
     <section id="contact">
-        <div class="container"><!--Section Heading START-->
-            <div class="heading text-center mb-5">
-                <h2 class="fs-3 kayden-underline-left mb-5 fw-bold text-uppercase d-inline-block">Contact Us</h2>
-            </div><!--Section Heading END-->
-            <!--Section Body START-->
-            <div class="section-body">
-                <div class="row gy-5">
-                    <div class="col-md-6">
-                        <div class="d-flex flex-column justify-content-center h-100"><!--Contact Details START-->
-                            <div class="contact-details d-flex flex-row align-items-center mb-3">
-                                <div class="cd-icon fs-2 me-4"><i class="fas fa-envelope"></i></div>
-                                <div class="cd-info fs-5 font-family-secondary"><a href="#" class="text-white"><span
-                                            class="__cf_email__"
-                                            data-cfemail="d5beb4acb1b0bb95b0adb4b8a5b9b0fbb6bab8">hu200188@outlook.com</span></a>
-                                </div>
-                            </div><!--Contact Details END--><!--Contact Details START-->
-                            <div class="contact-details d-flex flex-row align-items-center mb-3">
-                                <div class="cd-icon fs-2 me-4"><i class="fas fa-map-marked-alt"></i></div>
-                                <div class="cd-info fs-5 font-family-secondary">Ottawa Canada </div>
-                            </div><!--Contact Details END--><!--Contact Details START-->
-                            <div class="contact-details d-flex flex-row align-items-center">
-                                <div class="cd-icon fs-2 me-4"><i class="fas fa-phone"></i></div>
-                                <div class="cd-info fs-5 font-family-secondary"><a href="#"
-                                        class="text-white">+343-558-7447 </a></div>
-                            </div><!--Contact Details END-->
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <h3 class="mb-5 fs-4 text-center text-sm-left"> Let's start to conversation</h3>
-                        <p class="fs-4">It is a pleasure to communicate with you, if you have any questions please
-                            contact me!</p>
-
-
-                    </div>
-                </div>
-            </div><!--Section Body END-->
+      <div class="container">
+        <!--Section Heading START-->
+        <div class="heading text-center mb-5">
+          <h2
+            class="fs-3 kayden-underline-left mb-5 fw-bold text-uppercase d-inline-block"
+          >
+            Contact Us
+          </h2>
         </div>
-    </section><!--Contact Us END-->
-
+        <!--Section Heading END-->
+        <!--Section Body START-->
+        <div class="section-body">
+          <div class="row gy-5">
+            <div class="col-md-6">
+              <div class="d-flex flex-column justify-content-center h-100">
+                <!--Contact Details START-->
+                <div
+                  class="contact-details d-flex flex-row align-items-center mb-3"
+                >
+                  <div class="cd-icon fs-2 me-4">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div class="cd-info fs-5 font-family-secondary">
+                    <a href="#" class="text-white"
+                      ><span
+                        class="__cf_email__"
+                        data-cfemail="d5beb4acb1b0bb95b0adb4b8a5b9b0fbb6bab8"
+                        >hu200188@outlook.com</span
+                      ></a
+                    >
+                  </div>
+                </div>
+                <!--Contact Details END--><!--Contact Details START-->
+                <div
+                  class="contact-details d-flex flex-row align-items-center mb-3"
+                >
+                  <div class="cd-icon fs-2 me-4">
+                    <i class="fas fa-map-marked-alt"></i>
+                  </div>
+                  <div class="cd-info fs-5 font-family-secondary">
+                    Ottawa Canada
+                  </div>
+                </div>
+                <!--Contact Details END--><!--Contact Details START-->
+                <div class="contact-details d-flex flex-row align-items-center">
+                  <div class="cd-icon fs-2 me-4">
+                    <i class="fas fa-phone"></i>
+                  </div>
+                  <div class="cd-info fs-5 font-family-secondary">
+                    <a href="#" class="text-white">+343-558-7447 </a>
+                  </div>
+                </div>
+                <!--Contact Details END-->
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h3 class="mb-5 fs-4 text-center text-sm-left">
+                Let's start to conversation
+              </h3>
+              <p class="fs-4">
+                It is a pleasure to communicate with you, if you have any
+                questions please contact me!
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--Section Body END-->
+      </div>
+    </section>
+    <!--Contact Us END-->
 
     <!--Footer START-->
     <footer class="michael-footer py-4">
-        <div class="container">
-            <div class="d-flex flex-column align-items-center justify-content-center py-3">
-
-                <!--Copyright START-->
-                <p class="text-center m-0">2024 ©. Michael Designed By </p><!--Copyright END-->
-            </div>
+      <div class="container">
+        <div
+          class="d-flex flex-column align-items-center justify-content-center py-3"
+        >
+          <!--Copyright START-->
+          <p class="text-center m-0">2024 ©. Michael Designed By</p>
+          <!--Copyright END-->
         </div>
-    </footer><!--Footer END--><!--To TOP START--><a href="#" class="toTop d-inline" id="return-to-top"><i
-            class="fas fa-chevron-up"></i></a><!--To TOP END--><!--JavaScript START-->
-    <script src="js/bootstrap.min.js"></script><!--JQuery-->
-    <script src="js/jquery.min.js"></script><!--AOS Animations-->
-    <script src="js/aos.js"></script><!--Jquery Easing -->
-    <script src="js/jquery.easing.min.js"></script><!--Jquery Appear -->
-    <script src="js/jquery.appear.min.js"></script><!--michael preloader -->
-    <script src="js/preloader.js"></script><!--Jquery Count To -->
-    <script src="js/jquery.countTo.js"></script><!--Masonry -->
-    <script src="js/masonry.pkgd.min.js"></script><!--Jquery Magnific Popup -->
-    <script src="js/jquery.magnific-popup.min.js"></script><!--OWL Carousel -->
-    <script src="js/owl.carousel.min.js"></script><!--Typed JS -->
-    <script src="js/typed.min.js"></script><!--michael Alert -->
-    <script src="js/alert.js"></script><!--michael Contact US -->
-    <script src="js/contact.js"></script><!--michael Custom Script -->
-    <script src="js/michael.js"></script><!--JavaScript END-->
-</body>
+      </div>
+    </footer>
+    <!--Footer END--><!--To TOP START--><a
+      href="#"
+      class="toTop d-inline"
+      id="return-to-top"
+      ><i class="fas fa-chevron-up"></i></a
+    ><!--To TOP END--><!--JavaScript START-->
+    <script src="js/bootstrap.min.js"></script>
+    <!--JQuery-->
+    <script src="js/jquery.min.js"></script>
+    <!--AOS Animations-->
+    <script src="js/aos.js"></script>
+    <!--Jquery Easing -->
+    <script src="js/jquery.easing.min.js"></script>
+    <!--Jquery Appear -->
+    <script src="js/jquery.appear.min.js"></script>
+    <!--michael preloader -->
+    <script src="js/preloader.js"></script>
+    <!--Jquery Count To -->
+    <script src="js/jquery.countTo.js"></script>
+    <!--Masonry -->
+    <script src="js/masonry.pkgd.min.js"></script>
+    <!--Jquery Magnific Popup -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
 
+    <!--OWL Carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!--Typed JS -->
+    <script src="js/typed.min.js"></script>
+    <!--michael Alert -->
+    <script src="js/alert.js"></script>
+    <!--michael Contact US -->
+    <script src="js/contact.js"></script>
+    <!--michael Custom Script -->
+    <script src="js/michael.js"></script>
+    <!--JavaScript END-->
+  </body>
 </html>
